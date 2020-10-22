@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>toggle sidebar</title>
+</head>
+<body>
+    <div id="side-menu" class="sideMenu">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="main-menu">
+            <h2>kebele</h2>
+            <a href="#"><i class="fa fa-home"></i>home</a>
+            <a href="#"><i class="fa fa-users"></i>about</a>
+            <a href="#"><i class="fa fa-book"></i>portfolio</a>
+            <a href="#"><i class="fa fa-file-o"></i>services</a>
+            <a href="#"><i class="fa fa-phone"></i>contact</a>
+        </div>
+    </div>
+
+    <div id="content-area">
+        <span style="font-size: 30px; cursor: pointer;"" onclick="openNav()" class="toggleSign">&#9776;</span>
+        <div class="content-text">
+            <h2>Lorem, ipsum.</h2>
+            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. </h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut assumenda sed temporibus blanditiis culpa quae sapiente nam eveniet, ab, accusantium facilis tempore repellendus ea vero quisquam. Tempore dicta minus iure quia autem quidem vero, porro, fuga rem, blanditiis ad officiis perferendis vitae eaque labore! Numquam, non corrupti vel perferendis nulla vitae, earum, distinctio repellendus iste dolor vero omnis voluptas blanditiis!</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut assumenda sed temporibus blanditiis culpa quae sapiente nam eveniet, ab, accusantium facilis tempore repellendus ea vero quisquam. Tempore dicta minus iure quia autem quidem vero, porro, fuga rem, blanditiis ad officiis perferendis vitae eaque labore! Numquam, non corrupti vel perferendis nulla vitae, earum, distinctio repellendus iste dolor vero omnis voluptas blanditiis!</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut assumenda sed temporibus blanditiis culpa quae sapiente nam eveniet, ab, accusantium facilis tempore repellendus ea vero quisquam. Tempore dicta minus iure quia autem quidem vero, porro, fuga rem, blanditiis ad officiis perferendis vitae eaque labore! Numquam, non corrupti vel perferendis nulla vitae, earum, distinctio repellendus iste dolor vero omnis voluptas blanditiis!</p>
+        </div>
+    </div>
+    <!-- <script src="app.js"></script> -->
+    <script>
+        function openNav(){
+    document.getElementById("side-menu").style.width = "300px";
+    document.getElementById("content-area").style.marginLeft = "300px"
+    document.querySelector(".toggleSign").innerText = ``;
+}
+function closeNav(){
+    document.getElementById("side-menu").style.width = "0px";
+    document.getElementById("content-area").style.marginLeft = "0px";
+    // document.querySelector(".toggleSign").innerText = "&#9776;";
+    document.querySelector(".toggleSign").innerHTML='<span style="font-size: 30px; cursor: pointer;"" onclick="openNav()" class="toggleSign">&#9776;</span>'
+}
+
+    </script>
+</body>
+</html>

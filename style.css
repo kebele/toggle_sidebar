@@ -1,0 +1,77 @@
+body{
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: rgba(147,206,222,1);
+}
+
+.sideMenu{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: -o-radial-gradient(center, ellipse cover, rgba(252,234,187,1) 0%, rgba(252,205,77,1) 19%, rgba(248,181,0,1) 51%, rgba(251,223,147,1) 100%);
+    overflow-x: hidden;
+    transition: .5s;
+    padding-top: 60px;
+}
+
+.main-menu h2{
+    text-align: center;
+    letter-spacing: 7px;
+    color: whitesmoke;
+    background: #111;
+    padding: 20px 0;
+}
+
+.sideMenu a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    color: black;
+    display: block;
+    transition : 0.3s;
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.sideMenu a i{
+    padding-right: 15px;
+}
+.main-menu a:hover{
+    color: whitesmoke;
+    background: #111;
+}
+.sideMenu .closebtn{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+#content-area{
+    transition: margin-left .5s;
+    padding: 16px;
+}
+.content-text{
+    padding: 100px 180px;
+    text-align: center;
+}
+.content-text h2{
+    background: cornflowerblue;
+    display: inline-block;
+    padding: 15px 35px;
+    text-transform: uppercase;
+    font-size: 50px;
+    color: whitesmoke;
+}
+.content-text h4{
+    text-transform: uppercase;
+    font-size: 25px;
+    margin: 0;
+    letter-spacing: 3px;
+}
+.content-text p{
+    font-size: 24px;
+}
